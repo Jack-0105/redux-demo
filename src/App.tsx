@@ -13,9 +13,9 @@ class App extends React.Component<IProps> {
 
 		this._testModel = new TestModel(props);
 
-		setInterval(() => {
-			this._testModel.update();
-		}, 1000);
+		// setInterval(() => {
+		// 	this._testModel.update();
+		// }, 1000);
 	}
 	render(): React.ReactNode {
 		const { display = '' } = this.props.testInfo;

@@ -11,7 +11,6 @@ if (process.env.NODE_ENV === 'development' && process.env.TARO_ENV !== 'quickapp
 const middlewareFuncs = applyMiddleware(middlewares);
 
 const enhancer = compose(middlewareFuncs);
-
 const store = createStore(rootReducer, enhancer);
 
 export { store };
